@@ -1,0 +1,25 @@
+{
+  "name": "sturdy-palm-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --w"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qzerrty/sturdy-palm-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qzerrty/sturdy-palm-tree/issues"
+  },
+  "homepage": "https://github.com/qzerrty/sturdy-palm-tree#readme"
+}
