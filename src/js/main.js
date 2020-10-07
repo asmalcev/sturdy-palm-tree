@@ -1,5 +1,7 @@
 import { Canvas } from './Canvas'
-import { Scene } from './Scene'
+import { SceneBuilder } from './Scene'
+
+import '../css/index.css'
 
 window.addEventListener('load', () => {
   const canvasParticles = new Canvas('#particles')
@@ -10,6 +12,7 @@ window.addEventListener('load', () => {
     sceneRoot.id = 'root'
     
     e.target.replaceWith(sceneRoot)
-    scene = new Scene(sceneRoot)
+    scene = new SceneBuilder(sceneRoot)
+    scene.scene1()
   })
 })

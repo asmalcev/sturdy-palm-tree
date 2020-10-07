@@ -81,7 +81,7 @@ export class Canvas {
       this.canvas.height = window.innerHeight
     })
 
-    this.canvas.addEventListener('mousemove', e => {
+    window.addEventListener('mousemove', e => {
       mouse.x = e.x
       mouse.y = e.y
     })
