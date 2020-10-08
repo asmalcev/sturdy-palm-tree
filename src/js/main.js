@@ -1,18 +1,12 @@
-import { Canvas } from './Canvas'
-import { SceneBuilder } from './Scene'
+import { LightingParticles } from './LightingParticles'
 
 import '../css/index.css'
+import '../css/animations.css'
 
 window.addEventListener('load', () => {
-  const canvasParticles = new Canvas('#particles')
-  let scene
-
-  document.querySelector('#init-btn').addEventListener('click', e => {
-    const sceneRoot = document.createElement('div')
-    sceneRoot.id = 'root'
-    
-    e.target.replaceWith(sceneRoot)
-    scene = new SceneBuilder(sceneRoot)
-    scene.scene1()
-  })
+  const scene1Canvases = new LightingParticles('#particles', '#lighter')
+  
+  const cursorStyle = document.createElement('style')
+  cursorStyle.innerHTML = '* { cursor: url(images/cursor.svg) 6 6, pointer; }'
+  document.head.appendChild(cursorStyle)
 })
