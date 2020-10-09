@@ -1,7 +1,8 @@
 import { LightingParticles } from './LightingParticles'
 
-import '../css/index.css'
+import '../css/media.css'
 import '../css/animations.css'
+import '../css/index.css'
 
 window.addEventListener('load', () => {
   const scene1Canvases = new LightingParticles('#particles', '#lighter')

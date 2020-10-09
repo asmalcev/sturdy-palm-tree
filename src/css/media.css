@@ -1,0 +1,27 @@
+/* 
+
+  smartphones, touchscreens
+
+*/
+@media (hover: none) and (pointer: coarse) {
+  .only-mobile {
+    display: block;
+  }
+  .only-computer {
+    display: none;
+  }
+}
+
+/*
+
+  mouse, touch pad
+
+*/
+@media (hover: hover) and (pointer: fine) {
+  .only-mobile {
+    display: none;
+  }
+  .only-computer {
+    display: block;
+  }
+}
