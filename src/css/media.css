@@ -25,3 +25,41 @@
     display: block;
   }
 }
+
+/*
+
+  1000- px
+
+*/
+@media (max-width: 1000px) {
+  .maw1000 {
+    display: block;
+  }
+  .miw1000 {
+    display: none;
+  }
+  .scene2 {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .scene2 article:first-of-type {
+    height: auto;
+  }
+  .scene2 article:nth-of-type(2) img {
+    width: 50vw;
+  }
+}
+
+/*
+
+  1000+ px
+
+*/
+@media (min-width: 1000px) {
+  .miw1000 {
+    display: block;
+  }
+  .maw1000 {
+    display: none;
+  }
+}
