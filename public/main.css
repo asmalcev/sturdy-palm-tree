@@ -1,10 +1,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Nunito:wght@300;400;700&display=swap);
-@keyframes appear-animation {
+@keyframes appear_animation {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes grow_down {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 :root {
@@ -65,7 +76,7 @@ body {
 }
 #lighter.active {
   display: block;
-  animation: appear-animation .3s;
+  animation: appear_animation .3s;
 }
 
 #particles {
@@ -209,7 +220,7 @@ body {
 .scene3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 4fr;
   grid-template-areas: 'h   h'
                        'a1 a2';
   grid-gap: 24px;
@@ -221,8 +232,13 @@ body {
   margin: 0 auto;
 }
 .scene3 article:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: a1;
+
   margin-top: -60px;
+  user-select: none;
 }
 .progress-bar {
   width: 60px;
@@ -233,17 +249,26 @@ body {
   display: inline-block;
 }
 .progress-bar:nth-of-type(2) {
-  margin-left: 60px;
+  margin-left: 100px;
   height: 250px;
   transform: rotateX(-20deg) rotateY(-30deg) translateY(30px);
 }
 .progress-bar:nth-of-type(3) {
-  margin-left: 60px;
+  margin-left: 100px;
   height: 200px;
   transform: rotateX(-20deg) rotateY(-30deg) translateY(60px);
 }
 .progress-bar:hover {
   transform: rotateX(-20deg) rotateY(-120deg);
+}
+.progress-bar:hover .bottom {
+  box-shadow: 0 0 50px 30px #FFEB3B99;
+}
+.progress-bar:nth-of-type(2):hover .bottom {
+  box-shadow: 0 0 50px 30px #42A5F599;
+}
+.progress-bar:nth-of-type(3):hover .bottom {
+  box-shadow: 0 0 50px 30px #ff7f1199;
 }
 .progress-bar .side {
   width: 100%;
@@ -309,6 +334,36 @@ body {
 }
 .scene3 article:nth-of-type(2) {
   grid-area: a2;
+}
+.scene3 article:nth-of-type(2) ul li {
+  margin: 24px 0;
+  padding: 0 36px;
+
+  list-style: none;
+  font-size: max(1vw, 1vh);
+  user-select: none;
+  overflow-y: hidden;
+}
+.scene3 article:nth-of-type(2) ul li label {
+  position: relative;
+}
+.scene3 article:nth-of-type(2) ul li label::before, 
+.scene3 article:nth-of-type(2) ul li label::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -36px;
+  width: 16px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--color-1);
+}
+.scene3 article:nth-of-type(2) ul li label::after {
+  transform: rotate(90deg);
+}
+.scene3 article:nth-of-type(2) ul li p {
+  margin-left: 20px;
+  animation: grow_down .3s;
 }
 /* 
 

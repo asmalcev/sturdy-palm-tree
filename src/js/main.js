@@ -1,5 +1,6 @@
 import { LightingParticles } from './LightingParticles'
 import { ScrollActivator } from './ScrollActivator'
+import { ListOfClosable } from './ListOfClosable'
 
 import '../css/animations.css'
 import '../css/index.css'
@@ -12,4 +13,21 @@ window.addEventListener('load', () => {
 
   const scene1Canvas = new LightingParticles('#particles', '#lighter')
   const scrllAct = new ScrollActivator('scroll')
+  
+  const closelst = new ListOfClosable(
+    document.querySelector('#close-list'),
+    [
+      {
+        label: 'JS',
+        p: 'Skills: React, Webpack, Node.js, '
+      },
+      {
+        label: 'C++',
+        p: 'Skills: SDL1.2'
+      },
+      {
+        label: 'Python',
+        p: 'Skills: Django'
+      },
+    ])
 })
