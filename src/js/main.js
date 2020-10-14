@@ -18,8 +18,8 @@ window.addEventListener('load', () => {
     document.querySelector('#close-list'),
     [
       {
-        label: 'JS',
-        p: 'Skills: React, Webpack, Node.js, '
+        label: 'JavaScript',
+        p: 'Skills: React, Webpack, Node.js, AJAX, Canvas, WebSocket'
       },
       {
         label: 'C++',
@@ -27,7 +27,11 @@ window.addEventListener('load', () => {
       },
       {
         label: 'Python',
-        p: 'Skills: Django'
+        p: 'Skills: Django, Uvicorn'
+      },
+      {
+        label: 'Other',
+        p: 'Skills: Git, SQL, '
       },
     ])
 })

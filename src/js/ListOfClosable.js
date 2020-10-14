@@ -4,29 +4,29 @@ export class ListOfClosable {
     this.content = []
     content.forEach((c, i) => {
       this.content.push({
-        label: document.createElement('label'),
-        p: document.createElement('p'),
+        li: document.createElement('li'),
         closed: true
       })
-      this.content[i].p.style['display'] = 'none'
-      this.content[i].label.addEventListener('click', this.changeVisibility.bind(this, i))
-      this.content[i].label.innerHTML = c.label
-      this.content[i].p.innerHTML = c.p
-      const li = document.createElement('li')
+      const label = document.createElement('label')
+      label.innerHTML = c.label + '<span></span>'
+
+      const p = document.createElement('p')
+      p.innerHTML = c.p
       
-      li.appendChild(this.content[i].label)
-      li.appendChild(this.content[i].p)
-      this.listRoot.appendChild(li)
+      this.content[i].li.appendChild(label)
+      this.content[i].li.appendChild(p)
+      this.content[i].li.addEventListener('click', this.changeVisibility.bind(this, i))
+      this.listRoot.appendChild(this.content[i].li)
     })
   }
 
   changeVisibility(index) {
-    const li = this.content[index]
-    if (li.closed) {
-      li.p.style['display'] = 'block'
+    const listElement = this.content[index]
+    if (listElement.closed) {
+      listElement.li.classList.add('active')
     } else {
-      li.p.style['display'] = 'none'
+      listElement.li.classList.remove('active')
     }
-    li.closed = ! li.closed
+    listElement.closed = ! listElement.closed
   }
 }
