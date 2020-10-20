@@ -1,4 +1,4 @@
-import { debounce, distance } from './utils'
+import { distance } from './utils'
 import { getLargerUnit } from './windowConstants'
 
 const maxDistant = getLargerUnit() * 5
