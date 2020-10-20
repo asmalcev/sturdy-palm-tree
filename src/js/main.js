@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
       },
       {
         label: 'Other',
-        p: 'Skills: Git, SQL, '
+        p: 'Skills: Git, SQL'
       },
     ])
 })

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --w"
+    "build": "webpack --w",
+    "prod": "webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "MIT",
