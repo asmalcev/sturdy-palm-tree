@@ -5,7 +5,6 @@ import { ListOfClosable } from './ListOfClosable'
 import '../css/animations.css'
 import '../css/index.css'
 import '../css/media.css'
-import { FilteredImage } from './FilteredImage'
 
 window.addEventListener('load', () => {
   const cursorStyle = document.createElement('style')
@@ -14,7 +13,6 @@ window.addEventListener('load', () => {
 
   const scene1Canvas = new LightingParticles('#particles', '#lighter')
   const scrllAct = new ScrollActivator('scroll')
-  const fillteredIMG = new FilteredImage('#portraitTemplate', '#portrait')
 
   const closelst = new ListOfClosable(
     document.querySelector('#close-list'),
@@ -33,7 +31,7 @@ window.addEventListener('load', () => {
       },
       {
         label: 'Other',
-        p: 'Skills: Git, SQL'
+        p: 'Skills: Git, SQL, Algorithms and Structs of data'
       },
     ])
 })
