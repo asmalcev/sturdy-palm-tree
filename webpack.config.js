@@ -14,7 +14,7 @@ module.exports = {
 
   entry: './src/js/main.js',
   output: {
-    path: path.resolve(__dirname, 'public'), 
+    path: path.resolve(__dirname, 'docs'), 
     filename: 'bundle.js' 
   },
   module: {

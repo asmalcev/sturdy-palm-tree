@@ -24,6 +24,7 @@ a {
 
 html {
   overflow-y: overlay;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 6px;
