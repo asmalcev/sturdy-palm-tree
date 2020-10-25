@@ -27,9 +27,22 @@ export class GooglePhotoGallery {
     leftBtn.classList.add('left-btn')
     leftBtn.addEventListener('click', this.iterateSlide.bind(this, -1))
 
+    this.pickers = document.createElement('div')
+    this.pickers.classList.add('pickers')
+    const widthOfPicker
+      = Math.floor((this.root.clientWidth - 12 * (imgUrlsArr.length + 1)) / imgUrlsArr.length)
+    imgUrlsArr.forEach((url, index) => {
+      const img = document.createElement('img')
+      img.src = this._replaceUrlsMetrics(url, widthOfPicker, 200)
+      img.setAttribute('loading', 'lazy')
+      img.addEventListener('click', this.changeSlide.bind(this, index))
+      this.pickers.appendChild(img)
+    })
+
     this.root.appendChild(this.slider)
     this.root.appendChild(rightBtn)
     this.root.appendChild(leftBtn)
+    this.root.appendChild(this.pickers)
   }
 
   changeSlide(index) {

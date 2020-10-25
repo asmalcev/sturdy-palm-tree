@@ -583,3 +583,28 @@ footer {
 #gallery button.right-btn:focus {
   border-right: none;
 }
+#gallery .pickers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+
+  width: 100%;
+  background-color: #0005;
+  padding: 12px 0;
+
+  transition: opacity .3s;
+}
+#gallery .pickers img {
+  margin-left: 12px;
+  transition: .3s;
+  opacity: 0.7;
+  border: 1px #fff0 solid;
+}
+#gallery .pickers img:hover {
+  opacity: 1;
+  border-color: #fff;
+}
+#gallery:hover .pickers {
+  opacity: 1;
+}
