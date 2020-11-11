@@ -11,8 +11,14 @@ export class GooglePhotoGallery {
     imgUrlsArr.forEach(url => {
       const img = document.createElement('div')
       img.classList.add('img')
+      let width = this.root.clientWidth
+      let height = this.root.clientHeight
+      if (width < 512) width = 512
+      if (width > 1000) width = 1000
+      if (height < 512) height = 512
+      if (height > 670) height = 670
       img.style.backgroundImage 
-        = `url(${this._replaceUrlsMetrics(url, this.root.clientWidth, this.root.clientHeight)})`
+        = `url(${this._replaceUrlsMetrics(url, width, height)})`
       img.setAttribute('loading', 'lazy')
       this.slider.appendChild(img)
     })
@@ -31,6 +37,7 @@ export class GooglePhotoGallery {
     this.pickers.classList.add('pickers')
     const widthOfPicker
       = Math.floor((this.root.clientWidth - 12 * (imgUrlsArr.length + 1)) / imgUrlsArr.length)
+
     imgUrlsArr.forEach((url, index) => {
       const img = document.createElement('img')
       img.src = this._replaceUrlsMetrics(url, widthOfPicker, 200)
