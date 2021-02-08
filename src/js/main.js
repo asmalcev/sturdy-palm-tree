@@ -24,11 +24,11 @@ window.addEventListener('load', () => {
       },
       {
         label: 'C++',
-        p: '<span class="secondary">Skills:</span> SDL1.2'
+        p: '<span class="secondary">Skills:</span> SDL1.2, SDL2'
       },
       {
         label: 'Python',
-        p: '<span class="secondary">Skills:</span> Django, Uvicorn'
+        p: '<span class="secondary">Skills:</span> Django, Uvicorn, WSGI, ASGI'
       },
       {
         label: 'Other',

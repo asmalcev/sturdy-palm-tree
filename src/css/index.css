@@ -443,6 +443,7 @@ body {
 .scene4 .project:first-of-type {
   border-top: 1px var(--color-3) solid;
 }
+.scene4 .project h3,
 .scene4 .project a {
   display: block;
   padding-right: 70px;
