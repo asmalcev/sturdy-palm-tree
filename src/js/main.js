@@ -9,7 +9,7 @@ import { GooglePhotoGallery } from './GooglePhotoGallery'
 
 window.addEventListener('load', () => {
   const cursorStyle = document.createElement('style')
-  cursorStyle.innerHTML = '* { cursor: url(images/cursor.svg) 6 6, pointer; }'
+  cursorStyle.innerHTML = '* { cursor: url(images/cursor.png) 6 6, pointer; }'
   document.head.appendChild(cursorStyle)
 
   const scene1Canvas = new LightingParticles('#particles', '#lighter')
