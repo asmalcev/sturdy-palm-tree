@@ -24,16 +24,16 @@ window.addEventListener('load', () => {
 				p: '<span class="secondary">Skills:</span> React, Webpack, Node.js, AJAX, Canvas, WebSocket'
 			},
 			{
-				label: 'C++',
-				p: '<span class="secondary">Skills:</span> SDL1.2, SDL2'
-			},
-			{
 				label: 'Python',
 				p: '<span class="secondary">Skills:</span> Django, Uvicorn, WSGI, ASGI'
 			},
 			{
 				label: 'Other',
 				p: '<span class="secondary">Skills:</span> Git, SQL, Algorithms and Structs of data'
+			},
+			{
+				label: 'C++',
+				p: '<span class="secondary">Skills:</span> SDL1.2, SDL2'
 			},
 		]
 	);

@@ -79,6 +79,12 @@ body {
 	color: var(--color-4);
 }
 
+.main-title {
+	padding: 24px 4px;
+	font-size: max(10vw, 6vh);
+	text-align: center;
+}
+
 /* 
 
 		SCENE 1
@@ -432,8 +438,8 @@ body {
 	margin: 48px 0;
 }
 .scene4 .project {
-	position: relative;
-	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr max-content;
 
 	padding: 24px;
 	border-bottom: 1px var(--color-3) solid;
@@ -443,30 +449,23 @@ body {
 .scene4 .project:first-of-type {
 	border-top: 1px var(--color-3) solid;
 }
-.scene4 .project h3,
-.scene4 .project a {
-	display: block;
-	padding-right: 70px;
-
+.scene4 .project h3 {
 	font-size: max(1.5vw, 3.5vh);
 	font-family: 'Nunito Sans', sans-serif;
+}
+.scene4 .project a {
+	display: block;
+
+	font-size: 18px;
+	font-family: 'Nunito Sans', sans-serif;
+
 	transition: color .3s;
 }
 .scene4 .project:hover a {
 	color: var(--color-1);
 }
-.scene4 .project .date {
-	position: absolute;
-	top: 32px;
-	right: 24px;
-}
 .scene4 .project p {
 	padding-left: 24px;
-	display: none;
-	animation: grow_down .3s;
-}
-.scene4 .project:hover p {
-	display: block;
 }
 
 /* 

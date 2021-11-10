@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <section class="scene scene1">
+  <section class="scene scene1 miw1000">
     <div id="lighter"></div>
     <h1>portfolio</h1>
     <p>slide down</p>
@@ -17,6 +17,7 @@
       <p>Use your computer for a better experience</p>
     </div>
   </section>
+  <h1 class="maw1000 scene-title main-title">Portfolio</h1>
   <section class="scene scene2">
     <article>
       <div class="name-text miw1000">
@@ -73,70 +74,147 @@
   <section class="scene scene4">
     <h2 class="scene-title">projects</h2>
     <div class="projects-list">
+
       <div class="project">
-        <a href="https://noise-conf.com/" target="_blank" rel="noopener noreferrer">All-Russian Scientific and Practical Conference "Protection From Increased Noise And Vibration"</a>
-        <span class="date">in development</span>
-        <p>
-          <span class="secondary">Technology stack:</span> React - client side; WSGI application - server side<br/>
-          <!-- <span class="secondary">Description:</span> -->
-        </p>
+        <div class="content">
+          <h3>Decision Theory Equation Solver</h3>
+          <a href="https://qzerrty.github.io/decision_theory_equation_solver/" target="_blank" rel="noopener noreferrer">qzerrty.github.io/decision_theory_equation_solver/</a>
+          <p>
+            <span class="secondary">Technology stack:</span> HTML + CSS + JS<br/>
+            <span class="secondary">Description:</span> Web-based calculator for solving problems of decision theory
+          </p>
+        </div>
+        <div class="date"></div>
       </div>
+
       <div class="project">
-        <h3>Smart TV</h3>
-        <span class="date">in development</span>
-        <p>
-          <span class="secondary">Technology stack:</span> React
-        </p>
+        <div class="content">
+          <h3>NOISE Theory and Practice</h3>
+          <a href="http://noisetp.com/" target="_blank" rel="noopener noreferrer">noisetp.com</a>
+          <p>
+            <span class="secondary">Technology stack:</span> Django CMS, PostgreSQL, AWS, Docker, nginx<br/>
+            <span class="secondary">Description:</span> The challenge was to update the old site. A new website design was developed. And also it was decided to expand the functionality of the admin panel by adding custom plugins. This will speed up the process of creating new pages and make it easier to maintain existing ones. The new site was created from scratch, then all the content of the previous version was transferred to it
+          </p>
+        </div>
+        <div class="date">in development</div>
       </div>
+
       <div class="project">
-        <h3>BattleShip</h3>
-        <span class="date">08.2020</span>
-        <p>
-          <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript - client side; Django, Uvicorn - server side
-        </p>
+        <div class="content">
+          <h3>All-Russian Scientific and Practical Conference "Protection From Increased Noise And Vibration"</h3>
+          <a href="https://noise-conf.com/" target="_blank" rel="noopener noreferrer">noise-conf.com</a>
+          <p>
+            <span class="secondary">Technology stack:</span> React - client side; WSGI application - server side<br/>
+            <span class="secondary">Description:</span> Information site about the conference. The server side is the simplest WSGI application. This choice was made because no complicated functionality was required - just give static files and return SPA on page requests
+          </p>
+        </div>
+        <div class="date">05.2021</div>
       </div>
+
+      <!-- <div class="project">
+        <div class="content">
+          <h3></h3>
+          <a href="" target="_blank" rel="noopener noreferrer"></a>
+          <p>
+            <span class="secondary">Technology stack:</span> <br/>
+            <span class="secondary">Description:</span> 
+          </p>
+        </div>
+        <div class="date"></div>
+      </div> -->
+
       <div class="project">
-        <h3>Coliving</h3>
-        <span class="date">06.2020</span>
-        <p>
-          <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript - client side; Django - server side
-        </p>
+        <div class="content">
+          <h3>Smart TV</h3>
+          <p>
+            <span class="secondary">Technology stack:</span> React<br/>
+            <span class="secondary">Description:</span> GUI of an online TV channel repeater. The main task is to adapt the interface control for the remote control for TV
+          </p>
+        </div>
+        <div class="date">03.2021</div>
       </div>
+
       <div class="project">
-        <a href="https://qzerrty.github.io/cyber-club-site/" target="_blank" rel="noopener noreferrer">CyberCity</a>
-        <span class="date">03.2020</span>
-        <p>
-          <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript - client side; PHP - server side
-        </p>
+        <div class="content">
+          <h3>BattleShip</h3>
+          <p>
+            <span class="secondary">Technology stack:</span> HTML + CSS + JS, Django (later React, WSGI application)<br/>
+            <span class="secondary">Description:</span> Browser sea battle game. Designed for LAN play
+          </p>
+        </div>
+        <div class="date">08.2020</div>
       </div>
+
       <div class="project">
-        <a href="https://hyperborea-theatre.ru" target="_blank" rel="noopener noreferrer">Hyperborea Theatre</a>
-        <span class="date">02.2020</span>
-        <p>
-          <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript - client side; Node.js - server side
-        </p>
+        <div class="content">
+          <h3>Coliving</h3>
+          <p>
+            <span class="secondary">Technology stack:</span> HTML + CSS + JS, Django<br/>
+            <span class="secondary">Description:</span> Web application template for search and delivery of coliving
+          </p>
+        </div>
+        <div class="date">06.2020</div>
       </div>
+
       <div class="project">
-        <a href="https://qzerrty.github.io/ege/" target="_blank" rel="noopener noreferrer">EGE</a>
-        <span class="date">01.2019</span>
-        <p>
-          <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript
-        </p>
+        <div class="content">
+          <h3>CyberCity</h3>
+          <a href="https://qzerrty.github.io/cyber-club-site/" target="_blank" rel="noopener noreferrer">qzerrty.github.io/cyber-club-site/</a>
+          <p>
+            <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript - client side; PHP - server side<br/>
+            <!-- <span class="secondary">Description:</span>  -->
+          </p>
+        </div>
+        <div class="date">03.2020</div>
       </div>
+
       <div class="project">
-        <a href="https://qzerrty.github.io/CardGame/" target="_blank" rel="noopener noreferrer">CardGame</a>
-        <span class="date">01.2019</span>
-        <p>
-          <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript
-        </p>
+        <div class="content">
+          <h3>Hyperborea Theatre</h3>
+          <a href="https://hyperborea-theatre.ru" target="_blank" rel="noopener noreferrer">hyperborea-theatre.ru</a>
+          <p>
+            <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript - client side; Node.js - server side<br/>
+            <!-- <span class="secondary">Description:</span>  -->
+          </p>
+        </div>
+        <div class="date">02.2020</div>
       </div>
+
       <div class="project">
-        <h3>rentactioncheb</h3>
-        <span class="date">08.2018</span>
-        <p>
-          <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript - client side; PHP - server side
-        </p>
+        <div class="content">
+          <h3>EGE</h3>
+          <a href="https://qzerrty.github.io/ege/" target="_blank" rel="noopener noreferrer">qzerrty.github.io/ege/</a>
+          <p>
+            <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript<br/>
+            <!-- <span class="secondary">Description:</span>  -->
+          </p>
+        </div>
+        <div class="date">01.2019</div>
       </div>
+
+      <div class="project">
+        <div class="content">
+          <h3>CardGame</h3>
+          <a href="https://qzerrty.github.io/CardGame/" target="_blank" rel="noopener noreferrer">qzerrty.github.io/CardGame/</a>
+          <p>
+            <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript<br/>
+            <!-- <span class="secondary">Description:</span>  -->
+          </p>
+        </div>
+        <div class="date">01.2019</div>
+      </div>
+
+      <div class="project">
+        <div class="content">
+          <h3>rentactioncheb</h3>
+          <p>
+            <span class="secondary">Technology stack:</span> HTML5, CSS3, JavaSript - client side; PHP - server side<br/>
+            <!-- <span class="secondary">Description:</span>  -->
+          </p>
+        </div>
+        <div class="date">08.2018</div>
+      </div>
+
     </div>
   </section>
   <footer>
