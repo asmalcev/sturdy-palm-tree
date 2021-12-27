@@ -1,0 +1,88 @@
+#gallery {
+	position: relative;
+	overflow: hidden;
+	
+	width: 80vw;
+	max-width: 1000px;
+	height: 70vh;
+	
+	margin: 0 auto;
+
+	user-select: none;
+}
+#gallery .slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	transition: 1s ease-out;
+}
+#gallery .slider .img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 64px;
+
+	background-position: center center;
+	background-size: cover;
+}
+#gallery button {
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: background-color .3s;
+
+	outline: none;
+	background-color: #0005;
+	border: none;
+	padding: 24px 16px;
+
+	color: var(--color-3);
+}
+#gallery button:hover {
+	background-color: #000c;
+}
+#gallery button:focus {
+	border: 1px var(--color-3) solid;
+}
+#gallery .left-btn {
+	left: 0;
+}
+#gallery .right-btn {
+	right: 0;
+	border-right: none;
+}
+#gallery button.left-btn:focus {
+	border-left: none;
+}
+#gallery button.right-btn:focus {
+	border-right: none;
+}
+#gallery .pickers {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+
+	width: 100%;
+	background-color: #0005;
+	padding: 12px 0;
+
+	transition: opacity .3s;
+}
+#gallery .pickers img {
+	margin-left: 12px;
+	transition: .3s;
+	opacity: 0.7;
+	border: 1px #fff0 solid;
+}
+#gallery .pickers img:hover {
+	opacity: 1;
+	border-color: #fff;
+}
+#gallery:hover .pickers {
+	opacity: 1;
+}

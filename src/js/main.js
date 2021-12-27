@@ -4,6 +4,14 @@ import { ListOfClosable } from './ListOfClosable';
 
 import '../css/animations.css';
 import '../css/index.css';
+
+import '../css/scene1.css';
+import '../css/scene2.css';
+import '../css/scene3.css';
+import '../css/scene4.css';
+import '../css/scene5.css';
+import '../css/footer.css';
+
 import '../css/media.css';
 
 import { GooglePhotoGallery } from './GooglePhotoGallery';
@@ -14,7 +22,8 @@ window.addEventListener('load', () => {
 	document.head.appendChild(cursorStyle);
 
 	const scene1Canvas = new LightingParticles('#particles', '#lighter');
-	const scrllAct     = new ScrollActivator('scroll');
+
+	const scrllAct = new ScrollActivator('scroll');
 
 	const closelst = new ListOfClosable(
 		document.querySelector('#close-list'),

@@ -1,0 +1,74 @@
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 27.12vw;
+
+	text-align: center;
+}
+
+footer h3 {
+	font-size: 1.3177vw;
+}
+
+.cube-wrapper {
+	--size: 3.5139vw;
+	--animation-time: .3s;
+
+	position: relative;
+	display: inline-block;
+
+	width: var(--size);
+	height: var(--size);
+	margin: 1.7569vw;
+}
+
+.cube, .cube div {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+
+	font-size: 1.171vw;
+	line-height: var(--size);
+
+	transform-style: preserve-3d;
+	transition: transform var(--animation-time);
+}
+
+.cube-front {
+	border: 1px var(--color-3) solid;
+}
+
+.cube-top {
+	background-color: var(--color-3);
+	border-radius: 4px;
+
+	color: var(--color-1);
+
+	transform: translate(0,-100%) rotateX(90deg);
+	transform-origin: bottom;
+}
+
+.cube-wrapper:hover .cube {
+	transform: translate(0,50%) rotateX(-90deg);
+}
+
+.cube-wrapper.scroll-active .cube {
+	animation: cube-rotate calc(var(--animation-time) * 2);
+}
+
+a:nth-of-type(2) .cube-wrapper.scroll-active .cube {
+	animation-delay: var(--animation-time);
+}
+
+a:nth-of-type(3) .cube-wrapper.scroll-active .cube {
+	animation-delay: calc(var(--animation-time) * 2);
+}
+
+a:nth-of-type(4) .cube-wrapper.scroll-active .cube {
+	animation-delay: calc(var(--animation-time) * 3);
+}
