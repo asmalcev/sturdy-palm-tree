@@ -62,6 +62,7 @@ body {
 
 	width: 100%;
 	min-height: 100vh;
+	padding: 0 4vw;
 }
 
 .scene-title {
@@ -72,7 +73,7 @@ body {
 
 .important {
 	padding: 0 4px;
-	border-radius: 2px;
+	border-radius: 6px;
 
 	color: var(--color-1);
 
@@ -87,4 +88,13 @@ body {
 
 .secondary {
 	color: var(--color-4);
+}
+
+.arrow-down {
+	--size: 1vw;
+
+	width: var(--size);
+	height: var(--size);
+
+	filter: invert(1);
 }

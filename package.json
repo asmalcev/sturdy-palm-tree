@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack -w",
-    "prod": "webpack --config webpack.prod.js"
+    "prod": "webpack --config webpack.prod.js",
+    "httpserver": "sudo python3 -m http.server 80 -d docs"
   },
   "author": "",
   "license": "MIT",

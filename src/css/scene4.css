@@ -5,7 +5,6 @@
 }
 
 .scene4 .projects-list {
-	padding: 0 4vw;
 	margin: 3.5139vw 0;
 }
 
@@ -32,6 +31,7 @@
 
 .scene4 .project a {
 	display: block;
+	margin-bottom: 0.5vw;
 
 	font-size: 1.3177vw;
 	font-family: 'Nunito Sans', sans-serif;
@@ -44,11 +44,26 @@
 }
 
 .scene4 .project p {
-	padding-left: 1.7569vw;
-
 	text-align: justify;
 }
 
 .scene4 .project .date {
 	text-align: right;
+}
+
+.scene4 .project .date .small {
+	font-size: 1.17vw;
+}
+
+.scene4 .project .date .arrow-down {
+	--size: 2vw;
+
+	display: block;
+	margin: 0.5vw auto;
+}
+
+.scene4 .project .date .content-container {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: 0;
 }

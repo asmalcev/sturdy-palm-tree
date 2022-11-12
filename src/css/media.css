@@ -48,6 +48,17 @@
 
 
 
+	.arrow-down::after,
+	.arrow-down::before {
+		border-radius: 1px;
+	}
+
+	.arrow-down::before {
+		top: 62%;
+	}
+
+
+
 	.scene {
 		min-height: auto;
 	}
@@ -110,10 +121,14 @@
 		grid-template-columns: 1fr 18vw;
 	}
 
+	.scene4 h2.scene-title {
+		text-align: left;
+	}
+
 	.scene4 .project h3 {
 		margin: 1vw 0 2.5vw 0;
 
-		font-size: 5.82vw;
+		font-size: 5.1vw;
 	}
 
 	.scene4 .project a {
@@ -125,8 +140,14 @@
 		font-size: 3.883vw;
 	}
 
-	.scene4 .project p {
-		padding-left: 0;
+	.scene4 .project .date .small {
+		font-size: 3.5vw;
+	}
+
+	.scene4 .project .date .arrow-down {
+		--size: 6vw;
+
+		margin: 2vw auto;
 	}
 
 
