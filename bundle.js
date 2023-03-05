@@ -1,152 +1,8 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+var __webpack_exports__ = {};
 
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./src/js/utils.js
+;// CONCATENATED MODULE: ./src/js/utils.js
 const distance = (x1, y1, x2, y2) => Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
 const getRandomIntegerFromRange = (min, max) => Math.floor(Math.random() * (max - min) + min);
@@ -173,7 +29,7 @@ const debounce = (fn, time) => {
 }
 
 
-// CONCATENATED MODULE: ./src/js/windowConstants.js
+;// CONCATENATED MODULE: ./src/js/windowConstants.js
 const vh = window.innerHeight / 100;
 const vw = window.innerWidth / 100;
 
@@ -184,7 +40,7 @@ const getLargerUnit = () => {
 		return vw;
 	}
 };
-// CONCATENATED MODULE: ./src/js/LightingParticles.js
+;// CONCATENATED MODULE: ./src/js/LightingParticles.js
 
 
 
@@ -196,7 +52,7 @@ let mouse = {
 	yReal: undefined
 };
 
-class LightingParticles_Point {
+class Point {
 	constructor(canvas, ctx, pointsArray) {
 		this.canvas = canvas;
 		this.ctx    = ctx;
@@ -317,11 +173,11 @@ class LightingParticles {
 	init() {
 		this.points = [];
 		for (let i = 0; i < Math.floor(window.innerWidth / 5); i++) {
-			this.points.push( new LightingParticles_Point(this.canvasParticles, this.cP, this.points) );
+			this.points.push( new Point(this.canvasParticles, this.cP, this.points) );
 		}
 	}
 };
-// CONCATENATED MODULE: ./src/js/ScrollActivator.js
+;// CONCATENATED MODULE: ./src/js/ScrollActivator.js
 class ScrollActivator {
 	constructor(attribute) {
 		this.attribute = attribute;
@@ -342,161 +198,7 @@ class ScrollActivator {
 		this.observables.forEach(element => this.observer.observe( element ) );
 	}
 };
-// CONCATENATED MODULE: ./src/js/ListOfClosable.js
-class ListOfClosable {
-  constructor(element, content) {
-    this.listRoot = element;
-    this.content = [];
-    content.forEach((c, i) => {
-      this.content.push({
-        li: document.createElement('li'),
-        closed: true
-      });
-      const label = document.createElement('label');
-      label.innerHTML = c.label + '<span></span>';
-
-      const p = document.createElement('p');
-      p.innerHTML = c.p;
-      
-      this.content[i].li.appendChild(label);
-      this.content[i].li.appendChild(p);
-      this.content[i].li.addEventListener('click', this.changeVisibility.bind(this, i));
-      this.listRoot.appendChild(this.content[i].li);
-    })
-  }
-
-  changeVisibility(index) {
-    const listElement = this.content[index];
-    if (listElement.closed) {
-      listElement.li.classList.add('active');
-    } else {
-      listElement.li.classList.remove('active');
-    }
-    listElement.closed = ! listElement.closed;
-  }
-}
-// EXTERNAL MODULE: ./src/css/animations.css
-var animations = __webpack_require__(0);
-
-// EXTERNAL MODULE: ./src/css/index.css
-var css = __webpack_require__(1);
-
-// EXTERNAL MODULE: ./src/css/scene1.css
-var scene1 = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./src/css/scene2.css
-var scene2 = __webpack_require__(3);
-
-// EXTERNAL MODULE: ./src/css/scene3.css
-var scene3 = __webpack_require__(4);
-
-// EXTERNAL MODULE: ./src/css/scene4.css
-var scene4 = __webpack_require__(5);
-
-// EXTERNAL MODULE: ./src/css/scene5.css
-var scene5 = __webpack_require__(6);
-
-// EXTERNAL MODULE: ./src/css/footer.css
-var footer = __webpack_require__(7);
-
-// EXTERNAL MODULE: ./src/css/media.css
-var media = __webpack_require__(8);
-
-// CONCATENATED MODULE: ./src/js/GooglePhotoGallery.js
-class GooglePhotoGallery {
-	constructor(imgUrlsArr, root) {
-		this.url  = imgUrlsArr;
-		this.root = root;
-
-		this.index = 0;
-
-		this.slider = document.createElement('div');
-		this.slider.classList.add('slider');
-
-		imgUrlsArr.forEach(url => {
-			const img = document.createElement('div');
-			img.classList.add('img');
-
-			let width  = this.root.clientWidth;
-			let height = this.root.clientHeight;
-
-			if (width < 512)  width  = 512;
-			if (width > 1000) width  = 1000;
-			if (height < 512) height = 512;
-			if (height > 670) height = 670;
-
-			img.style.backgroundImage = `url(${this._replaceUrlsMetrics(url, width, height)})`;
-			img.setAttribute('loading', 'lazy');
-			this.slider.appendChild(img);
-		})
-
-		const rightBtn     = document.createElement('button');
-		rightBtn.innerHTML = '&#10095;';
-		rightBtn.classList.add('right-btn');
-		rightBtn.addEventListener('click', this.iterateSlide.bind(this, 1));
-
-		const leftBtn     = document.createElement('button');
-		leftBtn.innerHTML = '&#10094;';
-		leftBtn.classList.add('left-btn');
-		leftBtn.addEventListener('click', this.iterateSlide.bind(this, -1));
-
-		this.pickers = document.createElement('div');
-		this.pickers.classList.add('pickers');
-		const widthOfPicker = (
-			Math.floor((this.root.clientWidth - 12 * (imgUrlsArr.length + 1)) / imgUrlsArr.length)
-		);
-
-		imgUrlsArr.forEach((url, index) => {
-			const img = document.createElement('img');
-
-			img.src = this._replaceUrlsMetrics(url, widthOfPicker, 200);
-			img.setAttribute('loading', 'lazy');
-			img.addEventListener('click', this.changeSlide.bind(this, index));
-
-			this.pickers.appendChild(img);
-		})
-
-		this.root.appendChild(this.slider);
-		this.root.appendChild(rightBtn);
-		this.root.appendChild(leftBtn);
-		this.root.appendChild(this.pickers);
-	}
-
-	changeSlide(index) {
-		this.index = index;
-
-		this.slider.style.transform = `translateY(calc(${-index * 100}% - ${index * 64}px))`;
-	}
-
-	iterateSlide(diff) {
-		let newSlideIndex = this.index + diff;
-
-		if (newSlideIndex < 0) {
-			newSlideIndex = this.url.length - 1;
-		} else if (newSlideIndex >= this.url.length) {
-			newSlideIndex = 0;
-		}
-
-		this.changeSlide(newSlideIndex);
-	}
-
-	_replaceUrlsMetrics(str, width, height) {
-		return str.replace(/(w[\d]*)-(h[\d]*)/, `w${width}-h${height}`);
-	}
-}
-// CONCATENATED MODULE: ./src/js/main.js
-
-
-
-
-
-
-
-
-
-
-
-
+;// CONCATENATED MODULE: ./src/js/main.js
 
 
 
@@ -504,48 +206,13 @@ class GooglePhotoGallery {
 
 
 window.addEventListener('load', () => {
-	const cursorStyle     = document.createElement('style');
-	cursorStyle.innerHTML = '* { cursor: url(images/cursor.png) 6 6, pointer; }';
+	const cursorStyle = document.createElement('style');
+	cursorStyle.innerHTML = '* { cursor: url(images/cursor.svg) 6 6, pointer; }';
 	document.head.appendChild(cursorStyle);
 
 	const scene1Canvas = new LightingParticles('#particles', '#lighter');
 
 	const scrllAct = new ScrollActivator('scroll');
-
-	const closelst = new ListOfClosable(
-		document.querySelector('#close-list'),
-		[
-			{
-				label: 'JavaScript',
-				p: '<span class="secondary">Skills:</span> React, Webpack, Node.js, AJAX, Canvas, WebSocket'
-			},
-			{
-				label: 'Python',
-				p: '<span class="secondary">Skills:</span> Django, Uvicorn, WSGI, ASGI'
-			},
-			{
-				label: 'Other',
-				p: '<span class="secondary">Skills:</span> Git, SQL, Algorithms and Structs of data'
-			},
-			{
-				label: 'C++',
-				p: '<span class="secondary">Skills:</span> SDL1.2, SDL2'
-			},
-		]
-	);
-
-	// const gpg = new GooglePhotoGallery([
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3dqJrFjvDNctoj0JMBKnZSEZ5MEHkY2wclwHeF6defUod_qFpPUIG7efsfaKy0KLn1XtNK3rrFnx33yZ1cvTqZH_-FnMfd5GjTo9KOTn_PY-weN2Xrk1MODlnp-ouS_91KHA5RT8_Y83p9TCo9y_boQLg=w1260-h945-no?authuser=0',
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3cceCtmtEEmveWhr791Qe1QxDledMIJ4PPtO13gLw27u4VHnE4zwdpX6Ap9V21b4kKI-70Qd7oHNHW-PHp-iV0HEfvZu98RRBzymxq_JTZNHQRMD8Pgt1DrWHR5eEqt8DzAblU34P0MNYfAD0yTxOukvA=w1260-h945-no?authuser=0',
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3eX4ShFiSu7lku-FbyDG_BCRXuEzcFu9yu_N8kC5EeAPqzPN9foNkbF-8HzKYtkkJ_Kva1JDTtm5PNCYH8H-hSlDZJk92l_40exd5skpqezbVEqPNN4l-QWYnCax0hNXpBNXaraOG5yukg63FODqkfw6g=w1260-h945-no?authuser=0',
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3fYzy70Up_VSrRTCjxk_Dz1IHvdUs_lpgbpocv0XFLOZNvWmj9NGFDpZTjIIzbugGEdlSW-3kGL_FPXmFipeXKJU9v3lfzAj4vsyIjUxrMRftm6kFx4mmipG_BIvGBuHj1x9hnY8-tU-djkETeFGI2kYA=w1260-h945-no?authuser=0',
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3egLVinw4SJS6bCF0ttlHGC35D7bf4XPLs_y3UtSYcWlx5dJnCbZb_vQ1GAp2sCSvZvXgW93V4hRcNT-QFuXL0IoJMwJA_KP-v4yG8UBXrKu0cqKznAjbxqtcAXHMkLF7M4cCRVxuMu3xAkhwhWkV9F4A=w1260-h945-no?authuser=0',
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3fUr_UCSn9v8GQEooz-It8mY4_cVKJXYpjn5NgBgx6-iS0dcZH5DtdWqZyWL2xaCJY2sLYqbaVIJp2GgkY8XmlKqXtjolVRTsmdI_u34rLR5ZaSiwcT2ji0PvGIGJfGfKCrMV-yWXJn6QBdoukH0g3qRA=w1418-h945-no?authuser=0',
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3eS8X4Qpd1N9inYrdHqch2p2NuyQivYihqmZOGyIoc-BA9qrPqajw-Gg65BmX2-RZRGSURG83o_G5i5C2vfazhBc1mDScmUCeixPBMSqsI5KNH6o76ue634IATqGs5PsSmt6oW7Mx3_a_pcqK6tbrXyuw=w1418-h945-no?authuser=0',
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3f9oiLVJDsGUfgSdAKititqnyZBOlm1ZWjaCxZjr1vXWVa2jVoqviPMODZPjPvzF0JMqyACzO-43Kuggixr2WdGPZmgLjl3fRdSPJcLs9Ay9Vzf6W13n6aNW8jq99L2jNNk-F96LpivuY8m_YqatV_K9w=w1260-h945-no?authuser=0',
-	//   'https://lh3.googleusercontent.com/pw/ACtC-3emUEbYxNFzY7oEMU0XHxgF3NqgIKgAZNkkMyXPBwpuSV0KUBrPy5qv6LWK4bL6RlW1kdcD6BVaxb04pavEvZTNYpjrXOg5zOmzW23afuHokhVNlpiU_TjzkZz4h9tOxlG3O1aofBmLKojyWO13Y3A7tA=w1418-h945-no?authuser=0'
-	// ], document.querySelector('#gallery'));
 });
-
-/***/ })
-/******/ ]);
+/******/ })()
+;
