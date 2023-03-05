@@ -2,3 +2,4 @@ node_modules
 *.log
 project*.png
 *_src*
+.vscode
