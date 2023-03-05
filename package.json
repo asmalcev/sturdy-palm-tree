@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "webpack -w",
-    "prod": "webpack --config webpack.prod.js",
-    "httpserver": "sudo python3 -m http.server 80 -d docs"
+    "prod": "webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "MIT",
