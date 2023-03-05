@@ -3,6 +3,7 @@ import { ScrollActivator } from './ScrollActivator';
 import { ListOfClosable } from './ListOfClosable';
 
 import '../css/index.css';
+import '../css/media.css';
 
 window.addEventListener('load', () => {
 	const cursorStyle = document.createElement('style');
