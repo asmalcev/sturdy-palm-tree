@@ -40,7 +40,7 @@
 			<div class="meta-info">
 				<h2 class="scene-title">About</h2>
 				<p>
-					I am <a class="important" href="https://spb.hh.ru/resume/f5fabf3fff0824e6ac0039ed1f62496c337a45" target="_blank" rel="noopener noreferrer">Frontend-developer</a> with knowledge of Backend<br>
+					I am <a class="important" href="https://spb.hh.ru/resume/f5fabf3fff0824e6ac0039ed1f62496c337a45" target="_blank" rel="noopener noreferrer">Frontend-developer</a> with knowledge of Backend and CI/CD<br>
 					Malcev Alexander<br>
 					24/07/2001<br>
 					Born in Russia<br>
@@ -49,44 +49,46 @@
 			</div>
 		</article>
 		<article>
-			<!-- <canvas id="portrait"></canvas> -->
 			<img src="images/portrait.webp" alt="portrait" id="portraitTemplate">
 		</article>
 	</section>
 	<section class="scene scene3">
-		<h2 class="scene-title">programing skills</h2>
-		<article>
-			<div class="progress-bar">
-				<div class="side front">  JS</div>
-				<div class="side right">  1</div>
-				<div class="side back">   </div>
-				<div class="side top">    </div>
-				<div class="side bottom"> </div>
-				<div class="side left">   </div>
+		<h2 class="scene-title" id="skills">skills</h2>
+		<div class="skill-grid">
+			<div class="skill-grid__column">
+				<h3 class="skill-grid__column-title">Frontend</h3>
+				<ul class="skill-grid__list">
+					<li class="skill-grid__list-item">React</li>
+					<li class="skill-grid__list-item">TypeScript</li>
+					<li class="skill-grid__list-item">Next.js</li>
+					<li class="skill-grid__list-item">Webpack</li>
+					<li class="skill-grid__list-item">Material UI</li>
+				</ul>
 			</div>
-			<div class="progress-bar">
-				<div class="side front">  C++</div>
-				<div class="side right">  2</div>
-				<div class="side back">   </div>
-				<div class="side top">    </div>
-				<div class="side bottom"> </div>
-				<div class="side left">   </div>
+			<div class="skill-grid__column">
+				<h3 class="skill-grid__column-title">Backend</h3>
+				<ul class="skill-grid__list">
+					<li class="skill-grid__list-item">Nest.js</li>
+					<li class="skill-grid__list-item">Django CMS</li>
+				</ul>
 			</div>
-			<div class="progress-bar">
-				<div class="side front">  Py</div>
-				<div class="side right">  3</div>
-				<div class="side back">   </div>
-				<div class="side top">    </div>
-				<div class="side bottom"> </div>
-				<div class="side left">   </div>
+			<div class="skill-grid__column">
+				<h3 class="skill-grid__column-title">Other</h3>
+				<ul class="skill-grid__list">
+					<li class="skill-grid__list-item">Docker</li>
+					<li class="skill-grid__list-item">Arcadia CI</li>
+					<li class="skill-grid__list-item">GitHub Actions</li>
+					<li class="skill-grid__list-item">PostgreSQL</li>
+					<li class="skill-grid__list-item">Bash</li>
+					<li class="skill-grid__list-item">Figma</li>
+					<li class="skill-grid__list-item">Git / Arc</li>
+					<li class="skill-grid__list-item">Nginx</li>
+				</ul>
 			</div>
-		</article>
-		<article>
-			<ul id="close-list"></ul>
-		</article>
+		</div>
 	</section>
 	<section class="scene scene4">
-		<h2 class="scene-title">projects</h2>
+		<h2 class="scene-title" id="projects">projects</h2>
 		<div class="projects-list">
 
 			<div class="project">
@@ -256,7 +258,7 @@
 
 		</div>
 	</section>
-	<footer>
+	<footer id="contacts">
 		<div>
 			<a href="https://t.me/senenjaqsy" target="_blank" rel="noopener noreferrer">
 				<div class="cube-wrapper" data-scroll>

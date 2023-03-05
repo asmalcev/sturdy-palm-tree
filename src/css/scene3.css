@@ -1,204 +1,28 @@
-.scene3 {
+.scene.scene3 {
+	min-height: auto;
+}
+
+.scene3 .skill-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr 4fr;
-	grid-template-areas:
-		'h   h'
-		'a1 a2';
-	grid-gap: 1.7569vw;
+	grid-template-columns: repeat(3, 1fr);
 
-	padding: 7vh 7vw;
-}
-
-.scene3 h2 {
-	grid-area: h;
-	margin: 0 auto;
-}
-
-.scene3 article:nth-of-type(1) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	grid-area: a1;
-
-	margin-top: -60px;
-	user-select: none;
-}
-
-.progress-bar {
-	width: 60px;
-	height: 300px;
-	transform-style: preserve-3d;
-	transform: rotateX(-20deg) rotateY(-30deg);
-	transition: transform 1s;
-	display: inline-block;
-}
-
-.progress-bar:nth-of-type(2) {
-	margin-left: 100px;
-	height: 250px;
-	transform: rotateX(-20deg) rotateY(-30deg) translateY(30px);
-}
-
-.progress-bar:nth-of-type(3) {
-	margin-left: 100px;
-	height: 200px;
-	transform: rotateX(-20deg) rotateY(-30deg) translateY(60px);
-}
-
-.progress-bar:hover {
-	transform: rotateX(-20deg) rotateY(-120deg);
-}
-
-.progress-bar:hover .bottom {
-	box-shadow: 0 0 50px 30px #FFEB3B99;
-}
-
-.progress-bar:nth-of-type(2):hover .bottom {
-	box-shadow: 0 0 50px 30px #42A5F599;
-}
-
-.progress-bar:nth-of-type(3):hover .bottom {
-	box-shadow: 0 0 50px 30px #ff7f1199;
-}
-
-.progress-bar .side {
-	width: 100%;
+	padding: 5vh 0;
 	height: 100%;
-	background-color: #FFEE5866;
-	left: 0;
-	top: 0;
-	position: absolute;
+}
+
+.scene3 .skill-grid .skill-grid__column:not(:first-child) {
+	border-left: 1px var(--color-3) solid;
+}
+
+.scene3 .skill-grid .skill-grid__column .skill-grid__column-title {
+	font-size: 1.5vw;
 	text-align: center;
-	font-size: 24px;
-	padding: 6px;
-	font-weight: bold;
 }
 
-.progress-bar:nth-of-type(2) .side {
-	background-color: #42A5F566;
-}
-
-.progress-bar:nth-of-type(3) .side {
-	background-color: #ff7f1166;
-}
-
-.progress-bar .bottom {
-	transform: rotateX(90deg) translateZ(-240px);
-	transform-origin: bottom;
-	box-shadow: 0 0 50px 20px #FFEB3B77;
-	height: 60px;
-}
-
-.progress-bar:nth-of-type(2) .bottom {
-	box-shadow: 0 0 50px 20px #42A5F577;
-	transform: rotateX(90deg) translateZ(-190px);
-}
-
-.progress-bar:nth-of-type(3) .bottom {
-	box-shadow: 0 0 50px 20px #ff7f1177;
-	transform: rotateX(90deg) translateZ(-140px);
-}
-
-.progress-bar .top {
-	transform: translate(0, -100%) rotateX(90deg);
-	transform-origin: bottom;
-	height: 60px;
-	background-color: #FFEB3B66;
-}
-
-.progress-bar:nth-of-type(2) .top {
-	background-color: #2196F366;
-}
-
-.progress-bar:nth-of-type(3) .top {
-	background-color: #f5720066;
-}
-
-.progress-bar .back {
-	transform: translateZ(-60px);
-}
-
-.progress-bar .left {
-	transform: rotateY(90deg);
-	transform-origin: left;
-}
-
-.progress-bar .right {
-	transform: rotateY(90deg) translateZ(60px);
-	transform-origin: left;
-	background-color: #FFEB3B66;
-}
-
-.progress-bar:nth-of-type(2) .right {
-	background-color: #1E88E566;
-}
-
-.progress-bar:nth-of-type(3) .right {
-	background-color: #e0690066;
-}
-
-.scene3 article:nth-of-type(2) {
-	grid-area: a2;
-	padding-right: 24px;
-}
-
-.scene3 article:nth-of-type(2) ul li {
-	margin: 24px 0;
-	padding: 0 36px;
-
+.scene3 .skill-grid .skill-grid__column .skill-grid__list {
 	list-style: none;
-	font-size: 20px;
-	user-select: none;
-	overflow-y: hidden;
-}
 
-.scene3 article:nth-of-type(2) ul li label {
-	position: relative;
-	overflow: hidden;
-}
+	padding: 4vh 2vw;
 
-.scene3 article:nth-of-type(2) ul li label::before, 
-.scene3 article:nth-of-type(2) ul li label::after {
-	content: '';
-	position: absolute;
-	top: 12px;
-	left: -36px;
-	width: 16px;
-	height: 2px;
-	border-radius: 4px;
-	background-color: var(--color-1);
-}
-
-.scene3 article:nth-of-type(2) ul li label::after {
-	transform: rotate(90deg);
-	transition: .3s;
-}
-
-.scene3 article:nth-of-type(2) ul li.active label::after {
-	transform: rotate(0);
-}
-
-.scene3 article:nth-of-type(2) ul li p {
-	display: none;
-	margin-left: 20px;
-	animation: grow_down .3s;
-}
-
-.scene3 article:nth-of-type(2) ul li.active p {
-	display: block;
-}
-
-.scene3 article:nth-of-type(2) ul li label span {
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 100%;
-
-	background-color: var(--color-1);
-	height: 2px;
-}
-
-.scene3 article:nth-of-type(2) ul li:hover label span {
-	animation: slide .5s cubic-bezier(.45,.1,.45,0);
+	font-size: 1.3177vw;
 }
