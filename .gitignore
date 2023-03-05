@@ -3,4 +3,5 @@ node_modules
 project*.png
 *_src*
 .vscode
-docs
+docs/bundle.js
+docs/main.css
