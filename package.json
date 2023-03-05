@@ -1,8 +1,7 @@
 {
-  "name": "sturdy-palm-tree",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "webpack -w",
     "prod": "webpack --config webpack.prod.js",
