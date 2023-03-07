@@ -17,6 +17,11 @@ jobs:
       with:
         node-version: 16
 
+    - run: apt install sshpass
+
     - run: npm ci
     - run: npm run prod
-    - run: rsync -avzhHl docs/* alexmalcev.space:/root/portfolio
+    - env:
+        DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+        DEPLOY_LOGIN: ${{ secrets.DEPLOY_LOGIN }}
+      run: sshpass -p "$DEPLOY_PASSWORD" rsync -avzhHl docs/* "$DEPLOY_LOGIN"@alexmalcev.space:/root/portfolio
