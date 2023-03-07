@@ -19,6 +19,7 @@ jobs:
 
     - run: npm ci
     - run: npm run prod
+    - run: ssh-keygen -R alexmalcev.space
     - env:
         DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
         DEPLOY_LOGIN: ${{ secrets.DEPLOY_LOGIN }}
