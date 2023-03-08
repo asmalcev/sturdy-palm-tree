@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="notranslate">
+	<meta name="yandex" content="notranslate">
+	<meta name="description" content="Malcev Alexander - Frontend-developer">
+	<meta
+		name="keywords"
+		content="malcev alexander, мальцев александр, frontend developer, portfolio"
+	>
+	<meta name="author" content="Malcev Alexander">
+
+	<meta property="og:title" content="Malcev Alexander">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://alexmalcev.space/">
+	<meta property="og:image" content="images/portrait.webp">
+
 	<title>Malcev Alexander</title>
+
 	<link rel="stylesheet" href="main.css">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-		m[i].l=1*new Date();
-		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		ym(91148110, "init", {
-				clickmap:true,
-				trackLinks:true,
-				accurateTrackBounce:true
-		});
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/91148110" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
 </head>
 <body>
 	<section class="scene scene1 miw1024">
@@ -49,7 +47,10 @@
 			</div>
 		</article>
 		<article>
-			<img src="images/portrait.webp" alt="portrait" id="portraitTemplate">
+			<picture>
+				<source srcset="images/portrait_mobile.webp" media="(max-width: 1024px)">
+				<img src="images/portrait.webp" alt="portrait">
+			</picture>
 		</article>
 	</section>
 	<section class="scene scene3">
@@ -295,5 +296,22 @@
 	</footer>
 
 	<script src="bundle.js" defer></script>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();
+		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(91148110, "init", {
+				clickmap:true,
+				trackLinks:true,
+				accurateTrackBounce:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/91148110" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 </body>
 </html>
